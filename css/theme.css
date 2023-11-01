@@ -4,6 +4,15 @@
    * Copyright 2011-2022 Twitter, Inc.
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+
+@font-face {
+  font-family: 'Linotype-Didot-Italic';
+  src: url('/fonts/LinotypeDidot-Italic.otf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
 :root {
   --bs-blue: #1717e5;
   --bs-indigo: #6610f2;
@@ -450,6 +459,14 @@ progress {
   @media (min-width: 1200px) {
     .display-6 {
       font-size: 2.5rem; } }
+
+.display-7 {
+  font-size: calc(1.75rem + 3.5vw);
+  font-weight: 300;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .display-7 {
+      font-size: 3rem; } }      
 
 .list-unstyled {
   padding-left: 0;
@@ -6139,14 +6156,16 @@ textarea.form-control-lg {
 
 /* 英文文本字體 */
 .mt-6 {
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
+  /* font-family: "pritzious", sans-serif; */
+  font-family: 'Linotype-Didot-Italic', serif;
   font-style: italic;
   
   transform: skew(-20deg);
 }
 .mt-7 {
-  transform: skew(-20deg);
-
+  /* transform: skew(-20deg); */
+  font-weight: 0;
 }
 
 
